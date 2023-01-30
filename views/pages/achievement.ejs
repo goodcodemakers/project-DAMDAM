@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://port-0-damdamv2-4fuvwk25lcstd4fc.gksl2.cloudtype.app/"
+    />
+    <meta property="og:title" content="담담" />
+    <meta property="og:image" content="https://i.ibb.co/qCCd1X7/Frame-2.png" />
+    <meta property="og:description" content="금연 웹앱" />
+    <meta property="og:site_name" content="DamDam" />
+    <meta property="og:locale" content="Kor" />
+    <meta name="keywords" content="금연, 웹앱" />
+    <meta name="author" content="이름" />
+    <meta name="description" content="DamDam 홈페이지입니다." />
+    <link rel="icon" href="/images/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#1fab89" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1fab89" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <!-- 제이쿼리  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./js/achievement.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/achievement.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/black.css" />
+    <link rel="stylesheet" href="./css/lang.css" />
+    <title>Achievment</title>
+  </head>
+  <body id="achievement" class="<%= modeArr[0].mode %>">
+    <div class="achiev_wrap <%= langArr[0].lang[0].kor %>">
+      <!-- 업적 제목 -->
+      <div class="achiev_title">
+        <div class="achiev_left_arrow">
+          <a href="/main"><img src="./images/achieve_1.png" alt="arrow" /></a>
+        </div>
+        <h1>업적</h1>
+        <div class="achiev_price">
+          <div class="achiev_price_img">
+            <img src="./images/achieve_2.png" alt="" />
+          </div>
+          <span class="achiev_score"><%= totalLength %></span><span>/</span
+          ><span><%= allLength %></span>
+        </div>
+      </div>
+      <!-- 업적 내용 -->
+      <div class="achiev_contents_wrap">
+        <div class="depth1">
+          <% for( let i = 0; i < test[0].Price.length; i++ ) { %>
+          <div class="depth2">
+            <% if(test[0].Price[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div><img src="<%= test[0].Price[i].img %>" alt="Price" /></div>
+            <p><%= test[0].Price[i].content %></p>
+          </div>
+          <% } %> <% for( let i = 0; i < test[1].Day.length; i++ ) { %>
+          <div class="depth2">
+            <% if(test[1].Day[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div><img src="<%= test[1].Day[i].img %>" alt="Day" /></div>
+            <p><%= test[1].Day[i].content %></p>
+          </div>
+          <% } %> <% for( let i = 0; i < test[2].Count.length; i++ ) { %>
+          <div class="depth2">
+            <% if(test[2].Count[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div><img src="<%= test[2].Count[i].img %>" alt="Count" /></div>
+            <p><%= test[2].Count[i].content %></p>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <footer>
+        <div class="home">
+          <a href="/main"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="achievement active">
+          <a href="/achievement"><i class="fa-solid fa-trophy"></i></a>
+        </div>
+        <div class="community">
+          <a href="/community"><i class="fa-solid fa-user-group"></i></a>
+        </div>
+        <div class="calendar">
+          <a href="/calendar"><i class="fa-solid fa-calendar-days"></i></a>
+        </div>
+      </footer>
+    </div>
+    <div class="achiev_wrap <%= langArr[0].lang[1].en %>">
+      <!-- 업적 제목 -->
+      <div class="achiev_title">
+        <div class="achiev_left_arrow">
+          <a href="/main"><img src="./images/achieve_1.png" alt="arrow" /></a>
+        </div>
+        <h1>achievement</h1>
+        <div class="achiev_price">
+          <div class="achiev_price_img">
+            <img src="./images/achieve_2.png" alt="" />
+          </div>
+          <span class="achiev_score"><%= totalLength %></span><span>/</span
+          ><span><%= allLength %></span>
+        </div>
+      </div>
+      <!-- 업적 내용 -->
+      <div class="achiev_contents_wrap">
+        <div class="depth1">
+          <% for( let i = 0; i < achievedbEnArr[0].Price.length; i++ ) { %>
+          <div class="depth2">
+            <% if(achievedbEnArr[0].Price[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div>
+              <img src="<%= achievedbEnArr[0].Price[i].img %>" alt="Price" />
+            </div>
+            <p><%= achievedbEnArr[0].Price[i].content %></p>
+          </div>
+          <% } %> <% for( let i = 0; i < achievedbEnArr[1].Day.length; i++ ) {
+          %>
+          <div class="depth2">
+            <% if(achievedbEnArr[1].Day[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div>
+              <img src="<%= achievedbEnArr[1].Day[i].img %>" alt="Day" />
+            </div>
+            <p><%= achievedbEnArr[1].Day[i].content %></p>
+          </div>
+          <% } %> <% for( let i = 0; i < achievedbEnArr[2].Count.length; i++ ) {
+          %>
+          <div class="depth2">
+            <% if(achievedbEnArr[2].Count[i].date) { %>
+            <img class="checkBox" src="./images/checkBox.png" alt="checkBox" />
+            <% } %>
+            <div>
+              <img src="<%= achievedbEnArr[2].Count[i].img %>" alt="Count" />
+            </div>
+            <p><%= achievedbEnArr[2].Count[i].content %></p>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <footer>
+        <div class="home">
+          <a href="/main"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="achievement active">
+          <a href="/achievement"><i class="fa-solid fa-trophy"></i></a>
+        </div>
+        <div class="community">
+          <a href="/community"><i class="fa-solid fa-user-group"></i></a>
+        </div>
+        <div class="calendar">
+          <a href="/calendar"><i class="fa-solid fa-calendar-days"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- fontA -->
+    <script
+      src="https://kit.fontawesome.com/67eff22c15.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
