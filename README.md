@@ -4,7 +4,7 @@
 >
 > figma : https://www.figma.com/file/zDxduSGMj8QbVyKRWfuUov/%EA%B8%88%EC%97%B0%EC%95%B1?node-id=0%3A1
 > 
-> APK : https://drive.google.com/drive/folders/1Dt67euYvZ41_FVYl8XBFvUFWlPEEmhs8
+> APK : https://drive.google.com/file/d/1wSF2BkkKtr0WL1SbEhpUg1jv5WF-THKi/view?usp=sharing
 <br>
 
 # Description
