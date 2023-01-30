@@ -2,7 +2,7 @@
 
 > cloudtype : https://port-0-project-damdam-3vw25lcej8l61.gksl2.cloudtype.app/
 >
-> figma : https://www.figma.com/file/zDxduSGMj8QbVyKRWfuUov/%EA%B8%88%EC%97%B0%EC%95%B1?node-id=0%3A1
+> figma : https://www.figma.com/file/Rv8eDlTkrnYgKJEMs767zm/%EA%B8%88%EC%97%B0-%EC%96%B4%ED%94%8C?node-id=0%3A1&t=M4DB6ijYIH5NIB4x-1
 > 
 > APK : https://drive.google.com/file/d/1wSF2BkkKtr0WL1SbEhpUg1jv5WF-THKi/view?usp=sharing
 <br>
